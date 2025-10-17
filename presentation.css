@@ -216,4 +216,61 @@ font-family: var(--font-family-base);
 
 }
 
-/* ... chunk continues ... */
+/* Pricing Slide Responsive & Professional Formatting */
+.pricing-container.single {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: var(--space-2xl) 0;
+}
+.pricing-card.featured {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--space-2xl) var(--space-xl);
+  box-sizing: border-box;
+  font-size: var(--font-size-base);
+}
+.pricing-header h2 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-md);
+}
+.pricing-detail {
+  font-size: var(--font-size-base);
+  margin-bottom: var(--space-lg);
+}
+.pricing-features {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.pricing-features li {
+  font-size: var(--font-size-base);
+  margin-bottom: var(--space-sm);
+  padding-left: 1em;
+  position: relative;
+}
+.pricing-features li::before {
+  content: '\2022';
+  position: absolute;
+  left: 0;
+  color: var(--trillium-yellow, #FFC300);
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  .pricing-card.featured {
+    max-width: 98vw;
+    padding: var(--space-lg) var(--space-md);
+    font-size: var(--font-size-sm);
+  }
+  .pricing-header h2 {
+    font-size: var(--font-size-lg);
+  }
+  .pricing-detail {
+    font-size: var(--font-size-sm);
+  }
+  .pricing-features li {
+    font-size: var(--font-size-sm);
+  }
+}
