@@ -1266,17 +1266,20 @@ body {
 
 .pricing-card {
   background: var(--trillium-light-gray);
-  padding: var(--space-2xl);
-  border-radius: 20px;
+  padding: var(--space-lg);
+  border-radius: 16px;
   text-align: center;
   position: relative;
   transition: all var(--transition-fast);
   border: 3px solid transparent;
+  max-width: 420px;
+  margin: 0 auto;
 }
 
 .pricing-card.featured {
   border-color: var(--trillium-yellow);
-  transform: scale(1.05);
+  transform: scale(1);
+  max-width: 460px;
 }
 
 .pricing-card:hover {
@@ -1293,14 +1296,15 @@ body {
 }
 
 .pricing-icon {
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-xl);
   color: var(--trillium-yellow);
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm);
 }
 
 .pricing-header h2 {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
   color: var(--trillium-gray);
+  margin-bottom: var(--space-sm);
 }
 
 .pricing-amount {
@@ -1311,21 +1315,22 @@ body {
 }
 
 .currency {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
   color: var(--trillium-yellow);
   font-weight: 600;
 }
 
 .price {
-  font-size: var(--font-size-4xl);
+  font-size: var(--font-size-3xl);
   font-weight: 700;
   color: var(--trillium-gray);
 }
 
 .pricing-detail {
   color: var(--trillium-gray);
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-md);
   font-style: italic;
+  font-size: var(--font-size-sm);
 }
 
 .pricing-features {
@@ -1338,6 +1343,7 @@ body {
   padding: var(--space-xs) 0;
   padding-left: var(--space-lg);
   position: relative;
+  font-size: var(--font-size-sm);
   color: var(--trillium-gray);
 }
 
