@@ -258,11 +258,39 @@ font-family: var(--font-family-base);
   color: var(--trillium-yellow, #FFC300);
   font-weight: bold;
 }
+/* Ensure pricing slide content fits and is vertically centered */
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow-y: auto;
+  padding: var(--space-2xl) 0;
+}
+.pricing-container.single {
+  height: auto;
+  min-height: 0;
+}
+.pricing-card.featured {
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+  box-sizing: border-box;
+  font-size: var(--font-size-base);
+  max-height: 80vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 @media (max-width: 600px) {
   .pricing-card.featured {
     max-width: 98vw;
-    padding: var(--space-lg) var(--space-md);
+    padding: var(--space-md);
     font-size: var(--font-size-sm);
+    max-height: 90vh;
   }
   .pricing-header h2 {
     font-size: var(--font-size-lg);
