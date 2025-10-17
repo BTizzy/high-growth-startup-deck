@@ -225,12 +225,13 @@ font-family: var(--font-family-base);
   padding: var(--space-2xl) 0;
 }
 .pricing-card.featured {
-  max-width: 480px;
+  max-width: 380px;
   width: 100%;
   margin: 0 auto;
-  padding: var(--space-2xl) var(--space-xl);
+  padding: var(--space-lg) var(--space-md);
   box-sizing: border-box;
   font-size: var(--font-size-base);
+  margin-bottom: var(--space-2xl);
 }
 .pricing-header h2 {
   font-size: var(--font-size-xl);
@@ -287,9 +288,10 @@ font-family: var(--font-family-base);
 }
 @media (max-width: 600px) {
   .pricing-card.featured {
-    max-width: 98vw;
-    padding: var(--space-md);
+    max-width: 96vw;
+    padding: var(--space-sm);
     font-size: var(--font-size-sm);
+    margin-bottom: var(--space-xl);
     max-height: 90vh;
   }
   .pricing-header h2 {
@@ -301,4 +303,14 @@ font-family: var(--font-family-base);
   .pricing-features li {
     font-size: var(--font-size-sm);
   }
+}
+
+/* Ensure slide is scrollable and fits viewport */
+.slide {
+  height: 100vh;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
